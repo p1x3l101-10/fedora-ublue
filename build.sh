@@ -9,3 +9,7 @@ sed -i '0,/skip_if_unavailable/{s/enabled=0/enabled=1/}' /etc/yum.repos.d/rpmfus
 
 rpm-ostree install steam-devices syncthing syncthingctl-qt6 syncthingfileitemaction-qt6 syncthingplasmoid-qt6
 rpm-ostree uninstall filelight kwalletmanager5 solaar
+
+# Hide syncthing apps
+echo "Hidden=true" >> /usr/share/syncthing-ui.desktop
+echo "Hidden=true" >> /usr/share/syncthing-start.desktop
