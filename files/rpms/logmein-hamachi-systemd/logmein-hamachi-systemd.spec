@@ -33,8 +33,8 @@ ListenStream=/run/logmein-hamachi/ipc.sock
 [Install]
 WantedBy=sockets.target
 EOF
-rpm2cpio logmein-hamachi-2.1.0.203-1.x86_64.rpm | cpio --extract --to-stdout opt/logmein-hamachi/bin/hamachid > hamachid
-rpm2cpio logmein-hamachi-2.1.0.203-1.x86_64.rpm | cpio --extract --to-stdout opt/logmein-hamachi/LICENSE > LICENSE
+rpm2cpio logmein-hamachi-2.1.0.203-1.x86_64.rpm | cpio --extract --to-stdout ./opt/logmein-hamachi/bin/hamachid > hamachid
+rpm2cpio logmein-hamachi-2.1.0.203-1.x86_64.rpm | cpio --extract --to-stdout ./opt/logmein-hamachi/LICENSE > LICENSE
 
 %install
 mkdir -p %{buildroot}/usr/libexec/logmein-hamachi %{buildroot}/usr/lib/systemd/system %{buildroot}/usr/bin
