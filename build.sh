@@ -9,7 +9,7 @@ sed -i '0,/skip_if_unavailable/{s/enabled=0/enabled=1/}' /etc/yum.repos.d/rpmfus
 
 rpm-ostree install steam-devices syncthing syncthingctl-qt6 syncthingfileitemaction-qt6 syncthingplasmoid-qt6
 rpm-ostree uninstall filelight kwalletmanager5 solaar
-rpm-ostree install /tmp/files/rpms/logmein-hamachi-systemd/logmein-hamachi-systemd-2.1.0.203-1.x86_64.rpm
+rpm-ostree install /tmp/files/rpms/logmein-hamachi-systemd/logmein-hamachi-systemd-2.1.0.203-2.x86_64.rpm
 
 # Hide syncthing apps
 echo "Hidden=true" >> /usr/share/syncthing-ui.desktop

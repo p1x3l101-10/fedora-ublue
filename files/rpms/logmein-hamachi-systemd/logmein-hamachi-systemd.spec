@@ -1,6 +1,6 @@
 Name:       logmein-hamachi-systemd
 Version:    2.1.0.203
-Release:    1
+Release:    2
 Summary:    Repack of Logmein Hamachi to use modern sd-init files
 License:    Proprietary
 
@@ -19,6 +19,7 @@ Description=Logmein Hamachi
 
 [Service]
 ExecStart=/usr/libexec/logmein-hamachi/hamachid
+Type=forking
 
 [Install]
 WantedBy=network.target
