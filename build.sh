@@ -16,3 +16,5 @@ echo "Hidden=true" >> /usr/share/syncthing-ui.desktop
 echo "Hidden=true" >> /usr/share/syncthing-start.desktop
 
 systemctl disable rpm-ostreed-automatic.timer
+
+rpm-ostree deploy --ex-cliwrap=true
